@@ -1,6 +1,26 @@
+:root {
+  --color-mode: "light";
+
+  --background-light: white;
+  --font-light: black;
+
+  --background-dark: black;
+  --font-dark: white;
+}
+
+[data-user-color-scheme="light"] {
+  --bg-color: var(--background-light);
+  --font-color: var(--font-light);
+}
+
+[data-user-color-scheme="dark"] {
+  --bg-color: var(--background-dark);
+  --font-color: var(--font-dark);
+}
+
 body {
-  color: white;
-  background-color: black;
+  color: var(--font-color);
+  background-color: var(--bg-color);
 
   margin: 0;
 }
